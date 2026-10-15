@@ -5,21 +5,21 @@
 class Mixpost < Formula
   desc "Command line client for the Mixpost API"
   homepage "https://mixpost.app"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/inovector/mixpost-cli/releases/download/v0.1.0/mixpost_0.1.0_darwin_amd64.tar.gz"
-      sha256 "e4242f8aaa7150bbbb6042a7a93d0da8c4921cc52449ca0ebf03c621657498f8"
+      url "https://github.com/inovector/mixpost-cli/releases/download/v0.1.1/mixpost_0.1.1_darwin_amd64.tar.gz"
+      sha256 "0174a5c9d5d1ff90b440ff27223de6fa01334b665b5895bf2e220031677fefe0"
 
       define_method(:install) do
         bin.install "mixpost"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/inovector/mixpost-cli/releases/download/v0.1.0/mixpost_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9ff4bbbf31e6e0af045660b49a8bcbd9953b1bfe6d4404eacda257bcfabd7ba3"
+      url "https://github.com/inovector/mixpost-cli/releases/download/v0.1.1/mixpost_0.1.1_darwin_arm64.tar.gz"
+      sha256 "2204df5878d37d71f8b09045e76003699aca7aa9d5280c2d4cb0851ea8bb8b81"
 
       define_method(:install) do
         bin.install "mixpost"
@@ -29,15 +29,15 @@ class Mixpost < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inovector/mixpost-cli/releases/download/v0.1.0/mixpost_0.1.0_linux_amd64.tar.gz"
-      sha256 "7e4725d43ae2a78f758100b3cd69a5a1997404e08fdc6e5666ad521488f15940"
+      url "https://github.com/inovector/mixpost-cli/releases/download/v0.1.1/mixpost_0.1.1_linux_amd64.tar.gz"
+      sha256 "11b09630ba4880f3d149c065e61ed3d20aad9e4c515b7e2c0b8793fd1a12a25f"
       define_method(:install) do
         bin.install "mixpost"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inovector/mixpost-cli/releases/download/v0.1.0/mixpost_0.1.0_linux_arm64.tar.gz"
-      sha256 "43b251d9a6202cd04158b4b762842ed0b942ab5a2a44bc039fd28425f5475827"
+      url "https://github.com/inovector/mixpost-cli/releases/download/v0.1.1/mixpost_0.1.1_linux_arm64.tar.gz"
+      sha256 "4eebb068fd2b9d1710232a0c3a59d62ddc1df57f51a421f9e22a777b978e75ec"
       define_method(:install) do
         bin.install "mixpost"
       end
